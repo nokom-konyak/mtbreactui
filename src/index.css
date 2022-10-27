@@ -1,13 +1,202 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+body
+    {
+     margin:0px;
+     height:100%;
+     width:100%;
+     background:url('../public/bg.png')no-repeat center center fixed; 
+     -webkit-background-size:cover;
+     -o-background-size:cover;
+     -moz-background-size:cover;
+     background-size:cover;
+    } 
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.rightcorner{
+  float: right;
+  font-size: 30px;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color:antiquewhite;
+}
+
+table td {
+  padding: 0.5rem;
+  border: 2px solid black;
+  text-align: center;
+}
+table td:hover{
+  background-color:darkkhaki;
+}
+
+table th {
+  padding: 0.5rem;
+  border: 2px solid black;
+  background-color:chocolate;
+  text-align:center;
+}
+table th:hover{
+  background-color: yellow;
+}
+
+.td{
+  background-color: red;
+}
+.td:hover{
+  background-color:goldenrod;
+}
+
+.horizontal{
+  list-style-type: none; /*this will remove the default bullet in the UL */
+  margin: 0;
+  padding:0;
+  overflow: hidden;
+  background-color:black;
+}
+
+Button{
+  background-color:greenyellow;
+}
+
+Button:hover{
+  background-color: chocolate;
+}
+
+li{
+  float: left;
+}
+
+li button{
+  display: block;
+  color: yellow;
+  background-color: black;
+  text-align: center;
+  padding:14px 16px;/*from the top margin there should be 14px space and between each element there should be space of 16px*/
+  text-decoration: none;/*it will remove the underline for the text given in the anchor tag*/
+
+}
+
+li button:hover{
+  background-color: red;
+  color:black;
+}
+li a{
+  display: block;
+  color: yellow;
+  background-color: black;
+  text-align: center;
+  padding:14px 16px;/*from the top margin there should be 14px space and between each element there should be space of 16px*/
+  text-decoration: none;/*it will remove the underline for the text given in the anchor tag*/
+
+}
+
+li a:hover{
+  background-color: red;
+  color:black;
+}
+
+form{
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  background-color: bisque;
+  background:url('../public/bg.png')no-repeat center center fixed;
+}
+
+.form{
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  background-color: bisque;
+  background:url('../public/bg.png')no-repeat center center fixed;
+}
+
+form Input{
+  display: block;
+  color:red;
+  background-color: yellow;
+  text-align: center;
+  padding:14px 16px;/*from the top margin there should be 14px space and between each element there should be space of 16px*/
+  text-decoration: none;/*it will remove the underline for the text given in the anchor tag*/
+
+}
+
+form Input:hover{
+  background-color:yellow;
+  color:black;
+}
+
+.labels{
+  font-size: 10px;
+  line-height: 5px;
+  font-family: monospace;
+  font-weight: bolder;
+  opacity: 0.45;
+  color: black;
+}
+.inputs{
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 8px;
+  border: 2px solid;
+}
+.paper{
+  position: relative;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: linear-gradient(rgba(35,146,129,0.85));
+}
+.btn{
+  background-color: rebeccapurple;
+}
+
+
+.card{
+  padding:10px;
+  margin: 50px;
+}
+.card img{
+  width:300px;
+  height:300px;
+  margin-bottom: 20px;
+  transition: 0.3s ease-in-out;
+}
+.card img:hover{
+  transition:0.3s ease-in-out;
+  transform: scale(1.10);
+}
+
+@keyframes glow
+{
+    from
+    {
+        text-shadow: 0 0 10px rgb(199, 16, 19), 0 0 20px red, 0 0 30px red, 0 0 40 px red, 
+        0 0 50 px red, 0 0 60 px red, 0 0 70 px red;
+    }
+    to
+    {
+        text-shadow: 0 0 20px red, 0 0 30px red, 0 0 40px red,0 0 50px red,
+         0 0 60px red,0 0 70px red,0 0 80px red;
+    }
+}
+
+.anime
+{
+    padding-left: 20px;
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate ;
 }
